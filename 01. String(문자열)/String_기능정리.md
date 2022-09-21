@@ -44,15 +44,47 @@ char[] arr = str.toCharArray();
 </details>
 
 <details markdown="1">
-<summary></summary>
+<summary>Character 클래스로 대소문자 판별 or 변환</summary>
 
+- char의 값을 객체로 포장한다
+- isLowerCase(), isUpperCase(), toLowerCase(), toUpperCase()
+```java
+// 소문자인지 확인
+if(Character.isLowerCase(ch)) 
 
+// 대문자로 변환
+answer += Character.toUpperCase(ch);
+```
 </details>
 
 <details markdown="1">
-<summary></summary>
+<summary>문자열 붙이는 방식의 차이 [concat, +, StringBuilder]</summary>
 
 
+### concat
+- 초기값이 null이면 붙일 수 없음. new String( ) 해야됨.
+- 문자열을 계속해서 붙인다고 가정하면, 붙일때마다 새로운 주소값 할당 받게 됨
+- 연달아서 붙일 수 있음
+    
+```java
+String str = new String();
+String result = str.concat("Hi");
+String strs = result.concat(" Hello").concat(" World");
+```
+
+### StringBuilder
+    
+- 초기화를 안해도 된다.
+- 문자열을 계속 붙여도 주소값이 변하지 않는다
+- append로 문자열을 붙임
+- null 인 String과 붙이면 “null”이라는 문자열이 붙어짐
+- \+ 연산자는 컴파일 될 때 StringBuilder로 변환되기 때문에 + 연산자와 함께 쓰는 것은 성능에 좋지 않다.
+    
+```java
+StringBuilder result = new StringBuilder();
+result.append("Hi");
+result.append(" Hello");
+```
 </details>
 
 <details markdown="1">
