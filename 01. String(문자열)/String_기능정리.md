@@ -226,10 +226,27 @@ if(Character.isAlphabetic)
 
 
 <details markdown="1">
+<summary>Character 클래스로 숫자 또는 문자 판별</summary>
+    
+```java
+// Character.isDigit(char ch), isDigit(int codePoint)
+Character.isDigit('a'); // false
+Character.isDigit('97'); // true
+Character.isDigit(97); // false: codePoint는 Unicode 값으로 소문자 a
+
+// Character.isLetter(char ch), isLetter(int codePoint)
+Character.isLetter('a'); // true
+Character.isLetter('97'); // false
+Character.isLetter(97); // true : Unicode 'a'
+```
+</details>
+
+<details markdown="1">
 <summary></summary>
 
 
 </details>
+
 
 <details markdown="1">
 <summary></summary>
