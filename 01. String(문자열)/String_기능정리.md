@@ -88,8 +88,72 @@ result.append(" Hello");
 </details>
 
 <details markdown="1">
+<summary>Integer 최대 최소 값 설정과 활용 방안 [Integer.MIN_VALUE]</summary>
+
+- 편리함과 안전성
+- 초기화시 대소비교에 영향을 받지 않은 숫자를 설정할 수 있음
+    
+    ```java
+    int min = Integer.MIN_VALUE;
+    int max = Integer.MAX_VALUE;
+    // Byte, Short, Int, Long
+    ```
+</details>
+
+<details markdown="1">
+<summary>특정 값으로 문자열 분리 [split(” ”)]</summary>
+
+- 정규표현식, 특정 문자를 기준으로 문자열을 나누어 배열에 저장
+- 원본은 수정 안됨
+    
+    ```java
+    String str = "010-1234-5678";
+    String[] split1 = str.split("-");
+    String[] split2 = str.split("-", 2); // 배열을 2의 크기만큼만 생성. [010, 1234-5678]
+    ```
+
+</details>
+
+<details markdown="1">
+<summary>특정 문자 발견 위치 반환 [indexOf()]</summary>
+
+- 특정 문자나 문자열이 앞에서부터 처음 발견되는 인덱스를 반환
+- 찾지 못했을 경우 “-1” 반환
+- indexOf(”찾을 특정 문자”, “시작할 위치”) 시작 위치 생략 가능
+- 공백도 위치로 인식
+
+    ```java
+    String str = "Hello World";
+    str.indexOf("o"); // 4
+    str.indexOf("o", 5); // 7
+    ```
+    
+- lastIndexOf() : 뒤에서부터 처음 발견되는 인덱스 반환
+</details>
+
+<details markdown="1">
+<summary>문자열 자르기 [subString()]</summary>
+
+- subString(int index)
+- 문자열의 앞에서부터 index 위치 포함하여 자른 뒤, 이후의 모든 문자열을 리턴
+    
+    ```java
+    String str = "0123456789";
+    str.subString(5); // 56789 (01234의 5개 문자열 삭제)
+    ```
+    
+- subString(int  beginIndex, int endIndex)
+- beginIndex 위치에서 시작하여 endIndex 전 위치(endIndex - 1)까지의 값 리턴
+    
+    ```java
+    String str = "0000003565120";
+    str.subString(6, 12); // 356512
+    ```
+
+</details>
+
+<details markdown="1">
 <summary></summary>
 
 
 </details>
-
