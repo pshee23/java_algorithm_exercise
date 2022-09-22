@@ -205,9 +205,11 @@ if(Character.isAlphabetic)
 
 
 <details markdown="1">
-<summary></summary>
-
-
+<summary>indexOf를 활용하여 중복 문자 제거</summary>
+    
+    문자열을 한 문자씩 index와 indexOf로 검색한 값을 출력하다보면 중복 문자가 있을 경우 index는 현재 위치값, indexOf로 검색된 값은 처음부터 검색했을 시의 첫 발견 위치이므로 처음 발견 위치 값을 리턴하게 된다. 
+    
+    그러므로 현재 index 위치 값과 indexOf로 검색한 위치 값이 같은 경우에만 문자를 저장하면 중복이 없는 문자열이 나오게 되는것이다.
 </details>
 
 
