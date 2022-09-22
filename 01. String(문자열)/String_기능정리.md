@@ -214,11 +214,22 @@ if(Character.isAlphabetic)
 
 
 <details markdown="1">
+<summary>지정한 값(특수문자, 숫자 등)을 다른 값으로 치환 [replaceAll]</summary>
+
+- replace(”변환하고자 하는 대상CharSequence”, “변환할 문자 값”)
+- replaceAll(”변환 대상String”, “변환할 문자 값”)
+- 정규식
+    - [x-z] : x~z 범위 내의 문자
+     - [^x-z] : x~z 범위 내의 문자를 제외한 문자
+
+</details>
+
+
+<details markdown="1">
 <summary></summary>
 
 
 </details>
-
 
 <details markdown="1">
 <summary></summary>
