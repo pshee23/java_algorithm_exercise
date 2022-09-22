@@ -153,6 +153,62 @@ result.append(" Hello");
 </details>
 
 <details markdown="1">
+<summary>문자열 뒤집기 [StringBuilder(x).reverse()]</summary>
+
+```java
+String str = "abcde";
+// 초기화(str), reverse 함수, String 화
+String answer = new StringBuilder(str).reverse().toString();
+```
+</details>
+
+
+<details markdown="1">
+<summary>String 배열 초기화 [new String[n]]</summary>
+
+```java
+int n = 5;
+String[] str = new String[n];
+```
+</details>
+
+
+<details markdown="1">
+<summary>입력받은 인자값을 지정된 데이터형으로 변환 [String.valueOf(s)]</summary>
+
+- 인자값 : byte, int, long, double, boolean 등
+
+    ```java
+    Integer a = Integer.valueOf(7); // 7
+    Double b = Double.valueOf(5);   // 5.0
+    Float c = Float.valueOf("38");  // 38.0
+    Integer d = Integer.valueOf("100", 16) // 256 : 100을 16진수로
+    ```
+
+- char 배열을 String 화
+    
+    ```java
+    char[] s = x.toCharArray();
+    String answer = String.valueOf(s);
+    ```
+</details>
+
+
+<details markdown="1">
+<summary></summary>
+
+
+</details>
+
+
+<details markdown="1">
+<summary></summary>
+
+
+</details>
+
+
+<details markdown="1">
 <summary></summary>
 
 
