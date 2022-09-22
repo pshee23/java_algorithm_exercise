@@ -195,6 +195,16 @@ String[] str = new String[n];
 
 
 <details markdown="1">
+<summary>Character 클래스로 특수문자인지 일반 문자인지 판별</summary>
+    
+```java
+if(Character.isAlphabetic)
+// is.. 판별 기능 더 있음
+```
+</details>
+
+
+<details markdown="1">
 <summary></summary>
 
 
