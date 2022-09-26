@@ -242,6 +242,27 @@ Character.isLetter(97); // true : Unicode 'a'
 </details>
 
 <details markdown="1">
+<summary>Math 클래스로 두 수의 MIN, MAX 판단</summary>
+
+```java
+int iMax    = 0;
+int iMin    = 9999999;
+int[] asScores= { 50, 55, 34, 65, 78, 93, 23};
+ 
+//최대값 구하기
+for(int i : asScores )  iMax = Math.max( i, iMax );
+ 
+//최소값 구하기
+for(int i : asScores )  iMin = Math.min( i, iMin );
+ 
+System.out.println( iMax ); // 93
+System.out.println( iMin ); // 23
+```
+
+</details>
+
+
+<details markdown="1">
 <summary></summary>
 
 
