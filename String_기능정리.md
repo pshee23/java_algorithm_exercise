@@ -263,6 +263,40 @@ System.out.println( iMin ); // 23
 
 
 <details markdown="1">
+<summary>문자열 자르면서 문자 대체하는것을 연달아 하는 법</summary>
+
+```java
+// subString(0, 7) : 0에서 7까지 자른 값을 리턴
+String tmp = s.substring(0, 7).replace('#', '1').replace('*', '0');
+```
+
+</details>
+
+
+<details markdown="1">
+<summary>문자열 자르면서 원본도 수정하기</summary>
+
+```java
+s = s.subString(7); 
+// 7 ~ 끝까지의 문자열을 리턴하고 그 값을 원본에 적용.
+// 이러면 0~7의 값은 사라진다.
+```
+
+</details>
+
+
+<details markdown="1">
+<summary>2진수를 10진수로</summary>
+
+```java
+int num = Integer.parseInt(`2진수 String`, 2);
+// 2, 8, 16 진수를 -> 10진수로
+```
+
+</details>
+
+
+<details markdown="1">
 <summary></summary>
 
 
