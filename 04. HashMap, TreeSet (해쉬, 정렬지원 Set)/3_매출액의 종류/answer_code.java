@@ -1,6 +1,7 @@
 import java.util.*;
 
 /*
+ * [HashMap, Sliding Window]
  * 1. lt=0, rt=n-1. 
  * 2. for문 시작하면서 rt++하고 hashmap에 저장. 
  * 3. 현재 map의 size answer에 저장
