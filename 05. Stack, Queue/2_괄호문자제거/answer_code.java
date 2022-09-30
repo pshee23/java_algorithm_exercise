@@ -1,7 +1,7 @@
 import java.util.*;
 
 /*
- * [Stack] 어떤 방식을 써야 하는지 몰라서 못 풀었음
+ * [Stack] 코딩한 방식을 다시 참고하자.
  */
 class Main {	
 	public String solution(String str){
